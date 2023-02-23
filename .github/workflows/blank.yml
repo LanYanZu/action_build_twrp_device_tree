@@ -35,13 +35,3 @@ jobs:
     - name: ZIP device tree
       run: |
         zip -r DeviceTree.zip ./dt
-    - name: Upload to Release
-      uses: softprops/action-gh-release@v1
-      with:
-        files: |
-          ./DeviceTree.zip
-        name: Release ${{ github.ref }}
-        tag_name: ${{ github.ref }}
-        body: TODO New Release.
-        draft: false
-        prerelease: false
