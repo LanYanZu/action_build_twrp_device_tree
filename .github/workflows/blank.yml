@@ -40,8 +40,8 @@ jobs:
       with:
         files: |
           ./DeviceTree.zip
-        name: TWRP_Device_Tree-${{ github.run_id }}
-        tag_name: ${{ github.run_id }}
-        body: DeviceTree for twrp
+        name: 1
+        tag_name: 1
+        body: 1
         draft: false
         prerelease: false
